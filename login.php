@@ -1,32 +1,3 @@
-<?php
-// $message = "";
-#require ('../model/db.php');
-//session_start();
-//include ('../controller/auth.php');
-$con=mysqli_connect('localhost','root','','webapp');
-
-if (isset($_POST['username'])) {
-    $username = stripcslashes($_REQUEST['username']);
-    $username = mysqli_escape_string($con, $username);
-    $password = stripcslashes($_REQUEST['password']);
-    $password = mysqli_escape_string($con, $password);
-
-
-    //Checking is user existing in the database or not
-    $query = "SELECT * FROM `user` WHERE username='$username' and password='$password'";
-    $result = mysqli_query($con, $query);
-    $rows = mysqli_num_rows($result);
-    $row1 = mysqli_fetch_array($result);
-    // echo $rows;
-    if ($row1 == 1) {
-        header("Location: store.php");
-        // $_SESSION['username'] = $username;
-    } else {
-        header("Location: login.php");
-        // $message = " Username / Password is Incorrect";
-    }
-}
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -43,7 +14,7 @@ if (isset($_POST['username'])) {
                     <li><a href="index.php">HOME</a></li>
                 </ul>
             </nav>
-            <h1 class="band-name band-name-large">DGJK Digicom</h1>
+            <h1 class="band-name band-name-large">DGJK</h1>
         </header>
         <!-- <section class="content-section container"> -->
             <div class="container">
@@ -51,7 +22,7 @@ if (isset($_POST['username'])) {
                     <div class="row">
                         <div class="col-md-6 login-left">
                             <h2>Login</h2>
-                            <form action="login.php" method="post">
+                            <form action="validation.php" method="post">
                                 <div class="form-group">
                                     <label>Username</label>
                                     <input class="form-control" type="text" name="username" required>

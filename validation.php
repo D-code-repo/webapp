@@ -1,4 +1,5 @@
 <?php
+$message="";
 session_start();
 
 $con=mysqli_connect('localhost','root','','webapp');
@@ -26,16 +27,18 @@ if (isset($_POST['username'])) {
 
 
     //Checking is user existing in the database or not
-    $query = "SELECT * FROM `user` WHERE username='$username' and password='$password'";
+    $query = "SELECT * FROM `users` WHERE username='$username' and password='$password'";
     $result = mysqli_query($con, $query);
     $rows = mysqli_num_rows($result);
     //$row1 = mysqli_fetch_array($result);
 
     if ($rows == 1) {
-        header("Location: login.php");
-    } else {
         $_SESSION['username'] = $username;
         header("Location: store.php");
+    } else {
+        
+        header("Location: login.php");
+        $message = " Username / Password is Incorrect";
     }
 }
 ?>
