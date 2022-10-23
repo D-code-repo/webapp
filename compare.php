@@ -53,15 +53,20 @@
                         <td><img src="Images/blank.jpg" id="img1" alt=""></td>
                         <td><img src="Images/blank.jpg" id="img2" alt=""></td>
                     </tr>
-                    <tr>
+                    <tr height:"30px">
                         <th>Price</th>
                         <td id="price1"></td>
                         <td id="price2"></td>
                     </tr>
+                    <tr height:"30px">
+                        <th>Details</th>
+                        <td id="disp1"></td>
+                        <td id="disp2"></td>
+                    </tr>
                 </table>
             </div>
         </section>
-        <footer class="main-footer">
+        <!-- <footer class="main-footer">
             <div class="container main-footer-container">
                 <h3 class="band-name">DGJK Digicom</h3>
                 <ul class="nav footer-nav">
@@ -76,7 +81,7 @@
                     </li>
                 </ul>
             </div>
-        </footer>
+        </footer> -->
     </body>
 </html>
 <script src="data.js"></script>
@@ -96,10 +101,12 @@
         if(a!=select2){
             document.getElementById("img1").src=product[a].image;
             document.getElementById("price1").innerHTML=product[a].price;
+            document.getElementById("disp1").innerHTML=product[a].discription;
         } else {
             document.getElementById("select1").selectedIndex=0;
             document.getElementById("img1").src=product[0].image;
             document.getElementById("price1").innerHTML="";
+            document.getElementById("disp1").innerHTML="";
         }
     }
     
@@ -109,10 +116,12 @@
         if(a!=select1){
             document.getElementById("img2").src=product[a].image;
             document.getElementById("price2").innerHTML=product[a].price;
+            document.getElementById("disp2").innerHTML=product[a].discription;
         } else {
             document.getElementById("select2").selectedIndex=0;
             document.getElementById("img2").src=product[0].image;
             document.getElementById("price2").innerHTML="";
+            document.getElementById("disp2").innerHTML="";
         }   
     }
 </script>

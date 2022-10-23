@@ -44,7 +44,7 @@
                 </div>
             </div>
         </section>
-        <footer class="main-footer">
+        <!-- <footer class="main-footer">
             <div class="container main-footer-container">
                 <h6 class="band-name">DGJK Digicom</h6>
                 <ul class="nav footer-nav">
@@ -59,6 +59,6 @@
                     </li>
                 </ul>
             </div>
-        </footer>
+        </footer> -->
     </body>
 </html>

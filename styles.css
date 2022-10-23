@@ -52,7 +52,7 @@ html, body {
 }
 
 .main-header {
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, 0.041);
     background-image: url("Images/DGJK_WeBsite_banner_Final_a.jpg");
     background-blend-mode: multiply;
     background-size: cover;

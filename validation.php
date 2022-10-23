@@ -25,7 +25,6 @@ if (isset($_POST['username'])) {
     $password = stripcslashes($_REQUEST['password']);
     $password = mysqli_escape_string($con, $password);
 
-
     //Checking is user existing in the database or not
     $query = "SELECT * FROM `users` WHERE username='$username' and password='$password'";
     $result = mysqli_query($con, $query);
