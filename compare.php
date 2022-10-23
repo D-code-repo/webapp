@@ -37,12 +37,12 @@
                 <table>
                     <tr>
                         <th>Select Product</th>
-                        <th width:"400px">
+                        <th width:"500px">
                             <select id="select1" onchange="item1(this.value)">
                                 <option value="0">--- Select Anyone ---</option>
                             </select>
                         </th>
-                        <th width:"400px">
+                        <th width:"500px">
                             <select id="select2" onchange="item2(this.value)">
                                 <option value="0" >--- Select Anyone ---</option>
                             </select>
