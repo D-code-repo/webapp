@@ -208,5 +208,5 @@ var product=[
         "price":"₹30000",
         "image":"Images/ifb_9.5_top.jpg",
         "discription":"Fully Automatic Front Load Washing Machines, 720 RPM : Higher the spin speed, 4 Star Rating"
-    },
+    }
 ]
