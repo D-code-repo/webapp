@@ -25,7 +25,7 @@
             <h1 class="band-name band-name-large">DGJK</h1>
         </header>
         <section class="container content-section">
-            <h2 class="section-header">Compare Products</h2>
+            <h2 class="section-header">About Us</h2>
             <div class="shop-items">
                 <p>
                     DGJK digicom, the digital e-shop is a highly rated store for all digital products. 
