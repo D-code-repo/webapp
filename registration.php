@@ -2,7 +2,7 @@
 #$message="";
 session_start();
 
-$con=mysqli_connect('localhost','root','','webapp');
+$con=mysqli_connect('10.110.95.73','db_user','password','webapp');
 
 $username = stripcslashes($_REQUEST['username']);
 $username = mysqli_escape_string($con, $username);

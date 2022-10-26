@@ -6,6 +6,6 @@ RUN docker-php-ext-install pdo pdo_mysql mysqli
 CMD /usr/sbin/apache2ctl -D FOREGROUND
 
 #Copy files to webserver 
-COPY ./webapp /var/www/html/
+COPY ./webapp/ /var/www/html/
 
 EXPOSE 80

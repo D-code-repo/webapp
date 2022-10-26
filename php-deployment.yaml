@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
       - name: webapp1
-        image: divyanagaraj19/webapp:v3
+        image: dash92/webapp:v1.2
         imagePullPolicy: Always
         ports:
         - containerPort: 8081

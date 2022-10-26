@@ -1,6 +1,6 @@
 <?php
 
-$host="mysql";
+$host="10.110.95.73";
 $user="root";
 $pass="password";
 $db="webapp";

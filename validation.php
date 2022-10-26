@@ -2,7 +2,7 @@
 $message="";
 session_start();
 
-$con=mysqli_connect('localhost','root','','webapp');
+$con=mysqli_connect('10.110.95.73','db_user','password','webapp');
 // mysqli_select_db($con, 'webapp');
 
 // $name=$_POST['username'];
